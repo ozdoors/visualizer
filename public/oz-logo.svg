@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 168" width="640" height="168">
+  <!-- Fallback recreation of the OZ Aluminium Railing logo. Only shown if the
+       live logo URL fails to load. Swap public/oz-logo.svg for an exact copy
+       any time. -->
+  <!-- Icon: red rounded square with a blue railing -->
+  <rect x="8" y="24" width="120" height="120" rx="10" fill="#ffffff" stroke="#c1272d" stroke-width="9"/>
+  <g fill="none" stroke="#2b4c9b" stroke-width="7">
+    <!-- top & bottom rails -->
+    <line x1="30" y1="58" x2="106" y2="58"/>
+    <line x1="30" y1="110" x2="106" y2="110"/>
+    <!-- posts -->
+    <line x1="33" y1="50" x2="33" y2="120"/>
+    <line x1="103" y1="50" x2="103" y2="120"/>
+    <!-- spindles -->
+    <line x1="48" y1="60" x2="48" y2="108"/>
+    <line x1="60" y1="60" x2="60" y2="108"/>
+    <line x1="72" y1="60" x2="72" y2="108"/>
+    <line x1="84" y1="60" x2="84" y2="108"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="150" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-style="italic" font-weight="700" fill="#c1272d">Oz</text>
+  <text x="238" y="80" font-family="Arial, Helvetica, sans-serif" font-size="42" font-style="italic" font-weight="700" fill="#7c828c" letter-spacing="1">ALUMINIUM</text>
+  <text x="300" y="128" font-family="Arial, Helvetica, sans-serif" font-size="42" font-style="italic" font-weight="700" fill="#7c828c" letter-spacing="1">RAILING</text>
+</svg>

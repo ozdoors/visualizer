@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <g id="sv" fill="none" stroke="#5b6069" stroke-width="3.5" stroke-linecap="round">
+      <path d="M6,-15 C-8,-15 -8,-3 0,0 C8,3 8,15 -6,15"/>
+      <circle cx="6" cy="-15" r="2.2" fill="#5b6069" stroke="none"/>
+      <circle cx="-6" cy="15" r="2.2" fill="#5b6069" stroke="none"/>
+    </g>
+  </defs>
+  <rect width="400" height="300" fill="#eef1f6"/>
+  <rect x="40" y="70" width="320" height="10" fill="#8a9099"/>
+  <rect x="40" y="220" width="320" height="10" fill="#8a9099"/>
+  <!-- straight pickets -->
+  <g fill="#9aa0a8">
+    <rect x="70" y="110" width="7" height="110"/>
+    <rect x="110" y="110" width="7" height="110"/>
+    <rect x="150" y="110" width="7" height="110"/>
+    <rect x="243" y="110" width="7" height="110"/>
+    <rect x="283" y="110" width="7" height="110"/>
+    <rect x="323" y="110" width="7" height="110"/>
+  </g>
+  <!-- (1) continuous horizontal scroll/vine border under the top rail -->
+  <g fill="none" stroke="#5b6069" stroke-width="3.5" stroke-linecap="round">
+    <path d="M64 100 C78 86 92 86 100 100 C108 114 122 114 136 100 C150 86 164 86 172 100 C180 114 194 114 208 100 C222 86 236 86 244 100 C252 114 266 114 280 100 C294 86 308 86 316 100 C324 108 332 100 336 98"/>
+  </g>
+  <!-- (2) tall vertical scroll column centred in the panel -->
+  <use href="#sv" transform="translate(200,132)"/>
+  <use href="#sv" transform="translate(200,160) scale(-1,1)"/>
+  <use href="#sv" transform="translate(200,188)"/>
+  <rect x="46" y="60" width="14" height="180" fill="#6b7280"/>
+  <rect x="340" y="60" width="14" height="180" fill="#6b7280"/>
+</svg>

@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   OZ Aluminium Railing — brand theme
+   Matched to ozaluminiumrailing.ca: deep navy/indigo chrome (top bar + footer),
+   muted gold call-to-action ("Request A Quote"), brand red logo accent, on
+   white surfaces. All colors are CSS variables — tweak the :root block to
+   fine-tune to your exact brand values; nothing else needs to change.
+--------------------------------------------------------------------------- */
+:root {
+  --background: #f5f6f8; /* page canvas behind cards */
+  --foreground: #1e1b45; /* navy ink */
+
+  /* Brand core */
+  --color-navy: #1e1b45; /* top bar, footer, headings, primary buttons */
+  --color-navy-deep: #16143a; /* darker navy for hovers */
+  --color-ink: #1e1b45;
+  --color-ink-soft: #5b5f70; /* secondary text */
+
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1f2f6;
+  --color-border: #e4e6ee;
+
+  /* Muted gold — the "Request A Quote" CTA + active nav */
+  --color-accent: #c6a566;
+  --color-accent-soft: #f5eeda;
+  --color-accent-strong: #a9863f;
+
+  /* Brand red — logo accent, used sparingly */
+  --color-brand-red: #c1272d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--color-navy);
+  --color-navy-deep: var(--color-navy-deep);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-surface: var(--color-surface);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-border: var(--color-border);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-accent-strong: var(--color-accent-strong);
+  --color-brand-red: var(--color-brand-red);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Poppins", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+.shimmer {
+  background: linear-gradient(90deg, #ebedf2 0%, #f6f7f9 50%, #ebedf2 100%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s infinite linear;
+}

@@ -1,12 +1,11 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { OnePage } from "@/components/OnePage";
 
+// This app is embedded inside the WordPress site, which already provides the
+// site header and footer. So the visualizer renders ONLY its own body — no
+// header, no footer — to avoid duplicating the site chrome.
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-[var(--background)]">
-      <Header />
-
       {/* Brand hero band (navy, matches the site's section styling) */}
       <section className="bg-[var(--color-navy)] text-white">
         <div className="mx-auto max-w-6xl px-4 py-12 text-center sm:px-6 sm:py-16">
@@ -27,7 +26,6 @@ export default function Home() {
       <main className="mx-auto -mt-8 w-full max-w-5xl flex-1 px-4 pb-12 sm:px-6">
         <OnePage />
       </main>
-      <Footer />
     </div>
   );
 }

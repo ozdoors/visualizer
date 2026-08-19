@@ -62,7 +62,7 @@ export function UploadSection({
           setPhotos((prev) =>
             prev.map((p) => (p.id === id ? { ...p, status: "uploading" } : p))
           );
-          const remoteUrl = await uploadOriginalPhoto(prepared, config);
+          const remoteUrl = await uploadOriginalPhoto(prepared);
           setPhotos((prev) =>
             prev.map((p) => (p.id === id ? { ...p, status: "done", remoteUrl } : p))
           );

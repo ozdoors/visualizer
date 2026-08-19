@@ -101,19 +101,7 @@ export async function downscaleImage(file: File, maxEdge = 1600): Promise<File> 
   }
 }
 
-export async function uploadOriginalPhoto(
-  file: File,
-  config: UploadConfig
-): Promise<string> {
-  if (config.storageDriver === "vercel-blob") {
-    const { upload } = await import("@vercel/blob/client");
-    const blob = await upload(file.name, file, {
-      access: "public",
-      handleUploadUrl: "/api/blob-upload",
-    });
-    return blob.url;
-  }
-
+export async function uploadOriginalPhoto(file: File): Promise<string> {
   const form = new FormData();
   form.append("file", file);
   const res = await fetch("/api/upload-local", { method: "POST", body: form });
